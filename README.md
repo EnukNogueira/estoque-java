@@ -1,70 +1,92 @@
 # Inventory Management System
 
-Sistema backend em Java para controle de estoque e insumos industriais, com foco em manutenção. Aplica Orientação a Objetos com baixo acoplamento, alta coesão e tratamento centralizado de exceções.
+Sistema de gerenciamento de estoque desenvolvido em Java para controle de materiais e insumos.
+
+O projeto foi criado para praticar Programação Orientada a Objetos, organização de classes, controle de estoque e tratamento de exceções.
 
 ---
 
 ## Sobre o projeto
 
-Desenvolvido a partir da experiência prática no setor industrial, este sistema organiza o fluxo de entrada e saída de materiais de almoxarifado com foco em integridade dos dados e consulta rápida. A arquitetura aplica princípios sólidos de POO para garantir manutenibilidade e extensibilidade do código.
+A aplicação permite organizar informações relacionadas ao estoque e registrar movimentações de materiais.
+
+O projeto foi desenvolvido com foco em conceitos de backend e Programação Orientada a Objetos, buscando separar responsabilidades entre as diferentes partes da aplicação.
+
+Os dados do estoque são armazenados localmente em um arquivo JSON.
 
 ---
 
 ## Funcionalidades
 
-- Cadastro técnico de itens e peças de reposição
-- Registro de movimentações de entrada e saída do almoxarifado
-- Monitoramento de níveis de estoque para apoio na reposição de materiais
-- Persistência dos dados em `estoque.json`
+- Cadastro de itens e peças
+- Registro de entradas no estoque
+- Registro de saídas
+- Consulta dos itens cadastrados
+- Controle dos níveis de estoque
+- Persistência das informações em JSON
+- Tratamento de exceções
 
 ---
 
 ## Tecnologias utilizadas
 
-- **Java (JDK 17+)**
-- **JDBC / SQL** — persistência e gerenciamento de dados
-- **JSON** — armazenamento local do estado do estoque
+- **Java**
+- **JSON** — persistência dos dados
+- **JDBC / SQL** — conceitos de persistência e gerenciamento de dados
+- **IntelliJ IDEA** — ambiente de desenvolvimento
 
 ---
 
-## Conceitos de POO aplicados
+## Conceitos de Programação Orientada a Objetos
 
-- **Encapsulamento** — atributos privados com acesso controlado via getters e setters
-- **Herança** — reutilização de atributos e comportamentos entre classes relacionadas
-- **Tratamento de exceções** — captura e gestão centralizada de erros operacionais
-- **Baixo acoplamento / Alta coesão** — módulos independentes com responsabilidades bem definidas
+- [x] Classes e objetos
+- [x] Encapsulamento
+- [x] Herança
+- [x] Organização por responsabilidades
+- [x] Tratamento de exceções
+- [x] Baixo acoplamento
+- [x] Alta coesão
 
 ---
 
 ## Estrutura do projeto
 
-```
-src/
-└── (classes de domínio, repositório e controle de fluxo)
-estoque.json        # Base de dados local
-README.md
-```
+- `src/` — código-fonte da aplicação
+- `estoque.json` — armazenamento local dos dados
+- `PROJETO ESTOQUE.iml` — configuração do projeto
+- `README.md` — documentação
 
 ---
 
 ## Como executar
 
+Clone o repositório:
+
 ```bash
-# Clone o repositório
 git clone https://github.com/EnukNogueira/inventory-management-system.git
 cd inventory-management-system
-
-# Abra no IntelliJ IDEA ou compile via terminal
-# JDK 17 ou superior necessário
-javac src/**/*.java
-java Main
 ```
+
+Abra o projeto no IntelliJ IDEA e execute a classe principal da aplicação.
+
+O projeto requer Java instalado no ambiente.
+
+---
+
+## Objetivo do estudo
+
+O objetivo deste projeto foi aplicar conceitos de Programação Orientada a Objetos em uma aplicação prática de gerenciamento de estoque.
+
+O projeto também foi uma oportunidade para trabalhar com organização de código, tratamento de erros e persistência de informações.
 
 ---
 
 ## Autor
 
-**Enuk Nogueira** — Desenvolvedor focado em Engenharia de Dados e Automação de Processos
+**Enuk Nogueira**
+
+Estudante de Análise e Desenvolvimento de Sistemas pela PUCPR, com foco em Análise de Dados e Ciência de Dados.
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/enuknogueira/)
+
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EnukNogueira)
